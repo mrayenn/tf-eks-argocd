@@ -10,7 +10,7 @@ jobs:
       contents: read
       id-token: write
     env:
-      CLUSTER_NAME: eks-cluster
+      CLUSTER_NAME: ecomm-eks-argo-app
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
