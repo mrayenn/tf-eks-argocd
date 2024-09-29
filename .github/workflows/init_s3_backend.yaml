@@ -12,8 +12,8 @@ jobs:
       contents: read
     env:
       BUCKET_NAME: argo-ecomm
-      #AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}  # Replace with your actual secret
-      #WS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}  # Replace with your actual secret
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}  # Replace with your actual secret
+      WS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}  # Replace with your actual secret
     steps:
       - name: Checkout Code
         uses: actions/checkout@v2
