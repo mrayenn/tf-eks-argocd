@@ -13,7 +13,7 @@ terraform {
 data "terraform_remote_state" "infra" {
   backend = "s3"
   config = {
-    bucket = "remote-rayen-tfstate"
+    bucket = "argo-ecomm"
     key    = "infra/terraform.tfstate"
     region = "eu-west-1"
   }
