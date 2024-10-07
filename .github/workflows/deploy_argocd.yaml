@@ -21,6 +21,9 @@ jobs:
         with:
           role-to-assume: arn:aws:iam::688567261977:role/Github-Action-tf-eks
           aws-region: eu-west-1
+      
+      - name: Update kubeconfig for EKS
+        run: aws eks update-kubeconfig --name tech-cluster
 
       - name: Set up Terraform 
         uses: hashicorp/setup-terraform@v1
